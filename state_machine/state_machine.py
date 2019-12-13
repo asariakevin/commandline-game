@@ -1,6 +1,7 @@
 from .rooms.in_house import InHouse
 from .rooms.outside_house import OutsideHouse
 from .rooms.bedroom import Bedroom
+from .rooms.studyroom import StudyRoom
 
 class StateMachine:
     """ This class holds the whole state machine"""
@@ -10,6 +11,7 @@ class StateMachine:
         self.outside_house = OutsideHouse(self)
         self.in_house = InHouse(self)
         self.bedroom = Bedroom(self)
+        self.studyroom = StudyRoom(self)
         self.state = self.outside_house
 
     def enter_house(self):

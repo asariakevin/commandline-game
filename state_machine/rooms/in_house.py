@@ -24,7 +24,7 @@ class InHouse(Room):
         
 
     def enter_studyroom(self):
-        context.state = context.studyroom
+        self.context.state = self.context.studyroom
         print("you are now inside the studyroom")
         
 
